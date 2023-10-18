@@ -12,6 +12,10 @@ function insert_Row() {
 
 	const table = document.getElementById("sampleTable");
 
+	if (table.rows.length > 0) {
+		table.deleteRow(0);
+	}
+
 	table.insertBefore(newRow,table.firstChild);
 }
 
